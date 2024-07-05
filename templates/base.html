@@ -1,0 +1,22 @@
+{% extends 'bootstrap/base.html' %}
+{% block head %}
+    {{ super() }}
+    <title>
+        {% block title %}
+            Biblioteca Web App
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="../static/assets/style/styles.css">
+ <!-- <link rel="stylesheet" href=""> // aqui puedo conectar mi hoja de estilo -->
+{% endblock %}
+
+{% block body %}
+    {% block navbar %}
+    {% include 'navbar.html' %}
+    {% endblock %}
+
+    {% block content %}
+    <img src="../static/assets/portada.jpg" alt="Portada-libro-niña">
+    {% endblock %}
+
+{% endblock %}
