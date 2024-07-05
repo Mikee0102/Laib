@@ -24,7 +24,7 @@ def libros():
 
 cursor = conexion.cursor ()
 # recuperar información de los libros
-cursor.excecute ('''SELECT * FROM libros''')
+cursor.excecute ('''SELECT * FROM libro''')
 #recuperar La información
 datos = cursor.fecthall()
 # cerrar cursor y conexión con la base de datos
